@@ -5,6 +5,8 @@ const cors = require('cors');
 const morgan = require('morgan');
 require('dotenv').config();
 
+const { mongoUri, PORT } = require("./config.js");
+
 // Initialize Express app
 const app = express();
 const port = process.env.PORT || 5000;
